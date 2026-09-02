@@ -71,6 +71,37 @@ export default function Education() {
                   }}>
                     Performance: <strong>{edu.detail}</strong>
                   </span>
+                  
+                  {/* Coursework section */}
+                  {edu.coursework && edu.coursework.length > 0 && (
+                    <div style={{
+                      marginTop: "0.8rem",
+                      paddingTop: "0.8rem",
+                      borderTop: "1px solid var(--border)"
+                    }}>
+                      <p style={{
+                        fontFamily: "var(--font-mono)", fontSize: "0.7rem",
+                        color: "var(--light)", textTransform: "uppercase",
+                        marginBottom: "0.4rem", fontWeight: 600
+                      }}>
+                        Coursework
+                      </p>
+                      <div style={{ display: "flex", flexWrap: "wrap", gap: "0.3rem" }}>
+                        {edu.coursework.map((course) => (
+                          <span key={course} style={{
+                            fontSize: "0.7rem",
+                            color: "var(--text)",
+                            background: "var(--accentLight)",
+                            padding: "0.25rem 0.55rem",
+                            borderRadius: "4px",
+                            fontFamily: "var(--font-mono)"
+                          }}>
+                            {course}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
 
                 {/* Grad Year Badge */}

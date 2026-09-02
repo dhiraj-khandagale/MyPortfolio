@@ -64,8 +64,9 @@ export default function Hero({ onNav }) {
                 style={{
                   width: 60,
                   height: 60,
-                  borderRadius: "50%",
+                  borderRadius: "8px",
                   objectFit: "cover",
+                  objectPosition: "center 25%",
                   border: "2.5px solid var(--accent)",
                   boxShadow: "var(--shadow)"
                 }}
@@ -113,8 +114,7 @@ export default function Hero({ onNav }) {
               marginBottom: "2rem",
               fontFamily: "var(--font-sans)"
             }}>
-              Engineering high-fidelity full stack software with **Java**, **Spring Boot**, and **React**. 
-              Specialized in crafting clean backend logic, database schema design, and seamless user experiences with academic excellence.
+              I'm a Software Engineer in my learning and growth phase, building full-stack applications with Java, Spring Boot, and React. Passionate about clean code, problem-solving, and modern software engineering practices.
             </p>
 
             {/* CTA Buttons (Responsive alignment) */}
@@ -146,7 +146,7 @@ export default function Hero({ onNav }) {
               {[
                 ["📍", personalInfo.location],
                 ["🎓", "B.E. IT Pravara Rural"],
-                ["⭐", "SGPA 8.2"]
+                ["⭐", "GPA 7.99"]
               ].map(([icon, text]) => (
                 <span key={text} style={{
                   fontFamily: "var(--font-mono)", fontSize: "0.76rem", color: "var(--muted)",

@@ -22,7 +22,7 @@ export default function About() {
           <FadeIn delay={0.1}>
             <div className="dk-about-photo-col">
               <div style={{ position: "relative", display: "inline-block", maxWidth: "340px", width: "100%" }}>
-                {/* Floating tech background badge */}
+                {/* Dashed accent border frame */}
                 <div style={{
                   position: "absolute",
                   top: "-15px",
@@ -34,8 +34,8 @@ export default function About() {
                   opacity: 0.3,
                   zIndex: 0
                 }} />
-                
-                {/* Accent solid backplate */}
+
+                {/* Accent backplate */}
                 <div style={{
                   position: "absolute",
                   bottom: "-12px",
@@ -48,10 +48,10 @@ export default function About() {
                   boxShadow: "var(--shadow)"
                 }} />
 
-                {/* Main Photo Image Card */}
+                {/* Main Photo Image */}
                 <img
+                  alt="Dhiraj Khandagale - Software Engineer"
                   src="/dhiraj.jpg"
-                  alt="Dhiraj Khandagale - Full Stack Developer"
                   style={{
                     width: "100%",
                     height: "auto",
@@ -63,17 +63,17 @@ export default function About() {
                     zIndex: 2,
                     boxShadow: "var(--shadow-lg)",
                     border: "1px solid var(--border)",
-                    transition: "transform 0.4s ease"
+                    transition: "transform 0.4s"
                   }}
                   onMouseOver={(e) => {
-                    e.currentTarget.style.transform = "scale(1.02) translateY(-4px)";
+                    e.currentTarget.style.transform = "scale(1.02) translateY(0px)";
                   }}
                   onMouseOut={(e) => {
-                    e.currentTarget.style.transform = "scale(1) translateY(0)";
+                    e.currentTarget.style.transform = "scale(1) translateY(0px)";
                   }}
                 />
 
-                {/* Floating Stat Badge */}
+                {/* Floating Specialization Badge - Left Side */}
                 <div style={{
                   position: "absolute",
                   bottom: "20px",
@@ -90,8 +90,8 @@ export default function About() {
                 }}>
                   <span style={{ fontSize: "1.2rem" }}>💻</span>
                   <div>
-                    <p style={{ fontSize: "0.72rem", color: "var(--light)", fontFamily: "var(--font-mono)", textTransform: "uppercase" }}>Specialization</p>
-                    <p style={{ fontSize: "0.78rem", fontWeight: 700, color: "var(--accent)" }}>Java Full Stack</p>
+                    <p style={{ fontSize: "0.72rem", color: "var(--light)", fontFamily: "var(--font-mono)", textTransform: "uppercase", margin: 0 }}>Specialization</p>
+                    <p style={{ fontSize: "0.78rem", fontWeight: 700, color: "var(--accent)", margin: 0 }}>Software Engineer</p>
                   </div>
                 </div>
               </div>

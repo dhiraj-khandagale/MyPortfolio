@@ -51,8 +51,9 @@ export default function Navbar({ active, onNav, themeMode, onToggleTheme }) {
               style={{
                 width: 32,
                 height: 32,
-                borderRadius: "50%",
+                borderRadius: "6px",
                 objectFit: "cover",
+                objectPosition: "center 25%",
                 border: "1.5px solid var(--accent)"
               }}
             />

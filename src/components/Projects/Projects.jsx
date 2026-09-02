@@ -57,7 +57,7 @@ export default function Projects({ selectedSkill }) {
                     
                     {/* Professional Project links */}
                     <a
-                      href="https://github.com/dhirajkhandagale"
+                      href="https://github.com/dhiraj-khandagale/codecollab-realtime-code-editor"
                       target="_blank"
                       rel="noreferrer"
                       style={{
